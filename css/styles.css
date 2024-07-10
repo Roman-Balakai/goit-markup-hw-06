@@ -99,17 +99,19 @@ button:focus {
   background-color: #fff;
   padding: 0;
   cursor: pointer;
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .burger-close:hover {
   background-color: #fff;
-  fill: blue;
+  fill: #404bbf;
 }
 .burger-close:focus {
   background-color: #fff;
-  fill: green;
+  fill: #404bbf;
 }
-.burger-close:focus + .burger-close-svg {
-  fill: red;
+.burger-close-svg {
+  fill: #2e2f42;
 }
 .logo {
   font-family: "Raleway", sans-serif;
