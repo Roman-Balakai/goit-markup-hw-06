@@ -136,12 +136,6 @@ button:focus {
 .footer {
   background-color: #2e2f42;
 }
-@media (min-width: 768px) {
-  .navigation {
-    min-width: 768px;
-    height: 72px;
-  }
-}
 /* section busines */
 .main-cover {
   display: flex;
@@ -163,6 +157,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   min-width: 320px;
+  height: 432px;
   background-color: rgba(46, 47, 66, 0.7);
   background-image: linear-gradient(
       to bottom,
@@ -180,7 +175,7 @@ button:focus {
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin: 72px auto;
+  margin: auto;
 }
 /* section company */
 .company-container {
@@ -911,4 +906,47 @@ input:checked + label > span {
 }
 .link-footer-social-burger:focus {
   background-color: #404bbf;
+}
+/* media */
+@media (min-width: 768px) {
+  .navigation {
+    min-width: 768px;
+    height: 72px;
+  }
+  .business {
+    min-width: 768px;
+    height: 436px;
+  }
+  .main-cover {
+    height: 120px;
+    width: 496px;
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 768px;
+    margin: 36px auto;
+  }
+  .company-container {
+    min-width: 736px;
+    height: 312px;
+  }
+  .list-company {
+    width: 356px;
+    height: 120px;
+  }
+  .order-company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 24px;
+    row-gap: 72px;
+    width: 736px;
+    height: 312px;
+  }
+  .about {
+    margin-left: 0;
+  }
 }
