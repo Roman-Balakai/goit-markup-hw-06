@@ -66,7 +66,7 @@ button:focus {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 16px;
+  padding: 0 0;
 }
 .container-menu {
   display: flex;
@@ -773,7 +773,7 @@ input:checked + label > span {
   opacity: 1;
   pointer-events: auto;
 }
-.modal {
+.modal-menu {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -913,6 +913,14 @@ input:checked + label > span {
     min-width: 768px;
     height: 72px;
   }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    margin-right: 120px;
+  }
   .business {
     min-width: 768px;
     height: 436px;
@@ -937,6 +945,7 @@ input:checked + label > span {
     height: 120px;
   }
   .order-company {
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -949,4 +958,173 @@ input:checked + label > span {
   .about {
     margin-left: 0;
   }
+  .menu-burger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .team {
+    min-width: 768px;
+    height: 1224px;
+  }
+  .team-container {
+    min-width: 768px;
+    height: 1224px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-order {
+    height: 920px;
+    width: 552px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .portfolio-header {
+    min-width: 736px;
+    height: 1708px;
+  }
+  .portfolio-cont {
+    min-width: 736px;
+    height: 1708px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-list {
+    flex-direction: row;
+    width: 736px;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-list-order {
+    width: 356px;
+    height: 420px;
+  }
+  .list-app {
+    width: 356px;
+    height: 300px;
+  }
+  .portfolio-container {
+    width: 356px;
+    height: 120px;
+  }
+  .footer {
+    min-width: 786px;
+    height: 456px;
+  }
+  .container-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 786px;
+    align-items: normal;
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: normal;
+    padding-left: 108px;
+  }
+  .container-logo {
+    width: 264px;
+    height: 112px;
+    align-items: baseline;
+  }
+  .container-social {
+    margin-top: 96px;
+  }
+  .social-text {
+    text-align: start;
+  }
+  .container-subscribe {
+    width: 453px;
+    height: 80px;
+  }
+  .subscribe-text {
+    text-align: start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .visually-hidden-menu {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  width: 261px;
+  height: 48px;
+  margin-right: 112px;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.adress-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #434455;
+  font-style: normal;
+}
+.adress-link:hover {
+  color: #404bbf;
+}
+.adress-link:focus {
+  color: #404bbf;
+}
+.current {
+  position: relative;
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+.nav-link:hover {
+  color: #404bbf;
+}
+.nav-link:focus {
+  color: #404bbf;
+}
+.adress-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
