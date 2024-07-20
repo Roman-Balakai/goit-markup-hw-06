@@ -61,6 +61,7 @@ button:focus {
   background: #fff;
   display: flex;
   align-items: center;
+  padding: 16px;
 }
 .logo {
   font-family: Raleway;
@@ -133,8 +134,7 @@ button:focus {
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 120px;
-  margin-left: 16px;
+  margin-right: 149px;
 }
 .menu-list {
   display: flex;
@@ -173,7 +173,6 @@ button:focus {
 .contacts-adress {
   display: flex;
   flex-direction: column;
-  margin-right: 16px;
 }
 .adress-link {
   font-family: Roboto, sans-serif;
@@ -1012,8 +1011,14 @@ input:checked + label > span {
     height: 72px;
   }
   .container-menu {
-    min-width: 100%;
-    justify-content: space-between;
+    width: 736px;
+    height: 40px;
+  }
+  .logo {
+    margin-right: 120px;
+  }
+  .menu {
+    margin-right: 121px;
   }
   .business-container {
     margin: 112px auto;
@@ -1136,21 +1141,28 @@ input:checked + label > span {
     min-height: 584px;
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .navigation {
     min-width: 1158px;
   }
+  .container-menu {
+    width: 1128px;
+    height: 24px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-right: 76px;
+  }
   .menu {
-    margin-left: 156px;
-    gap: 76px;
+    margin-right: 332px;
   }
   .contacts-adress {
-    margin-right: 156px;
   }
   .adress-list {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    justify-content: space-between;
+    width: 344px;
   }
   .adress-link {
     font-size: 16px;
