@@ -202,8 +202,9 @@ button:focus {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1440px;
   background-position: center;
+  padding: 72px 52px;
 }
 .main-cover {
   font-weight: 700;
@@ -218,7 +219,6 @@ button:focus {
   margin-bottom: 72px;
 }
 .business-container {
-  margin: 72px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -226,7 +226,6 @@ button:focus {
 }
 .business-button {
   border-radius: 4px;
-  padding: auto;
   width: 169px;
   height: 56px;
   display: flex;
@@ -240,6 +239,7 @@ button:focus {
   min-width: 320px;
   height: 888px;
   background-color: #ffffff;
+  padding: 96px 16px;
 }
 .visually-hidden {
   position: absolute;
@@ -257,8 +257,6 @@ button:focus {
   width: 288px;
   height: 696px;
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
 .order-company {
   width: 288px;
@@ -266,7 +264,6 @@ button:focus {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
-  margin: 96px auto;
 }
 .about {
   font-family: Roboto;
@@ -303,6 +300,7 @@ button:focus {
   min-width: 320px;
   height: 2232px;
   background-color: #f4f4fd;
+  padding: 96px 28px;
 }
 .team-container {
   display: flex;
@@ -317,7 +315,6 @@ button:focus {
   color: #2e2f42;
   font-family: Roboto;
   text-align: center;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 .list-order {
@@ -328,9 +325,6 @@ button:focus {
   justify-content: flex-start;
   flex-direction: column;
   gap: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 96px;
 }
 .order {
   border-radius: 0 0 4px 4px;
@@ -406,13 +400,11 @@ button:focus {
 .portfolio-header {
   min-width: 320px;
   height: 2944px;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 16px;
 }
 .portfolio-cont {
   width: 288px;
   height: 2752px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -499,11 +491,9 @@ button:focus {
   background-color: #2e2f42;
   display: flex;
   flex-direction: column;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 16px;
 }
 .container-footer {
-  margin: 0 auto;
   gap: 72px;
   display: flex;
   flex-direction: column;
@@ -864,7 +854,7 @@ input:checked + label > span {
   left: 50%;
   position: absolute;
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -872,6 +862,7 @@ input:checked + label > span {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
+  overflow-y: auto;
 }
 .button-close {
   position: absolute;
@@ -903,6 +894,14 @@ input:checked + label > span {
   border: none;
   fill: #ffffff;
 }
+.modal-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 100%;
+  justify-content: space-between;
+  gap: 168px;
+}
 .menu-list-burger {
   display: flex;
   align-items: flex-start;
@@ -911,7 +910,6 @@ input:checked + label > span {
   gap: 40px;
   width: 151px;
   height: 200px;
-  margin-bottom: 168px;
 }
 .nav-link-burger {
   font-weight: 700;
@@ -965,7 +963,7 @@ input:checked + label > span {
   color: #404bbf;
 }
 .list-social-burger {
-  width: 280px;
+  width: 272px;
   height: 40px;
   display: flex;
   align-items: flex-start;
@@ -1020,12 +1018,10 @@ input:checked + label > span {
   .menu {
     margin-right: 121px;
   }
-  .business-container {
-    margin: 112px auto;
-  }
   .business {
     min-width: 768px;
     height: 436px;
+    padding: 112px 136px;
   }
   .main-cover {
     width: 496px;
@@ -1037,6 +1033,7 @@ input:checked + label > span {
   .company {
     min-width: 768px;
     height: 504px;
+    padding: 96px 16px;
   }
   .company-container {
     width: 736px;
@@ -1059,6 +1056,7 @@ input:checked + label > span {
   .team {
     min-width: 768px;
     height: 1224px;
+    padding: 96px 108px;
   }
   .list-order {
     width: 552px;
@@ -1099,6 +1097,7 @@ input:checked + label > span {
   .footer {
     min-width: 768px;
     height: 456px;
+    padding: 96px 164px 96px 108px;
   }
   .container-footer {
     width: 496px;
@@ -1107,7 +1106,6 @@ input:checked + label > span {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    margin-left: 108px;
   }
   .container-logo {
     width: 264px;
@@ -1156,8 +1154,6 @@ input:checked + label > span {
   .menu {
     margin-right: 332px;
   }
-  .contacts-adress {
-  }
   .adress-list {
     display: flex;
     flex-direction: row;
@@ -1170,9 +1166,10 @@ input:checked + label > span {
   .business {
     min-width: 1158px;
     height: 600px;
+    padding: 188px 0;
   }
   .business-container {
-    margin: 188px auto;
+    margin: 0 auto;
   }
   .main-cover {
     margin-bottom: 48px;
@@ -1180,15 +1177,16 @@ input:checked + label > span {
   .company {
     min-width: 1128px;
     height: 464px;
+    padding: 120px 0;
   }
   .company-container {
     width: 1128px;
     height: 224px;
+    margin: 0 auto;
   }
   .order-company {
     width: 1128px;
     height: 224px;
-    margin: 120px auto;
   }
   .list-company {
     width: 264px;
@@ -1205,6 +1203,10 @@ input:checked + label > span {
   .team {
     min-width: 1128px;
     height: 780px;
+    padding: 120px 156px;
+  }
+  .team-container {
+    align-items: center;
   }
   .list-order {
     width: 1128px;
@@ -1213,12 +1215,12 @@ input:checked + label > span {
   .portfolio-header {
     min-width: 1128px;
     height: 1240px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
   .portfolio-cont {
     width: 1128px;
     height: 1000px;
+    margin: 0 auto;
   }
   .portfolio-list {
     width: 1128px;
@@ -1240,6 +1242,7 @@ input:checked + label > span {
   .footer {
     min-width: 1158px;
     height: 312px;
+    padding: 100px 0 100px 0;
   }
   .container-footer {
     width: 1125px;
@@ -1280,5 +1283,15 @@ input:checked + label > span {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+@media (min-resolution: 192dpi) {
+  .business {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
   }
 }
